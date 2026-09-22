@@ -3,3 +3,29 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+.content{
+    padding: 80px max(calc(50% - 720px), 36px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+}
+
+.headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    padding-bottom: 32px;
+}
+.headline > img {
+    width: 40px;
+    height: 40px;
+}
+.headline > h2 {
+    font-size: 2.5rem;
+    color: rgba(78, 164, 135, 1);
+}

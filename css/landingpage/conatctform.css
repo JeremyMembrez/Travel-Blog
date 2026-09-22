@@ -1,0 +1,42 @@
+.contactform{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactform-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.contactform-form > label{
+    font-size: 24px;
+}
+.contactform-form > input{
+    
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-style: solid;
+}
+.contactform-form > button{
+    margin-top: 40px;
+    width: 139px;
+    height: 48px;
+    border-radius: 25px;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 24px;
+
+    align-self: center;
+}
+
+.contactform-privacypolicy{
+    margin-top: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+}
