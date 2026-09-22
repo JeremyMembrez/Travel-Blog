@@ -15,8 +15,8 @@ header > img {
 
 .hero-section {
     background-image:
-        url(../assets/img/landingscreen/landingscreen-background-yellow.png),
-        url(../assets/img/landingscreen/landingscreen-background-full.jpg);
+        url(../../assets/img/landingscreen/landingscreen-background-yellow.png),
+        url(../../assets/img/landingscreen/landingscreen-background-full.jpg);
 
     background-position:
         left top,
