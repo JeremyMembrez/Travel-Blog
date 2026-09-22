@@ -1,3 +1,7 @@
+html{
+    font-size: 16px;
+}
+
 header {
     background-color: rgba(78, 164, 135, 1);
 
@@ -33,4 +37,26 @@ header > img {
     position: absolute;
     top: 25%;
     left: 20%;
+}
+
+.headline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    padding-bottom: 32px;
+}
+
+.headline > img{
+    width: 40px;
+    height: 40px;
+}
+
+.headline > h2{
+    font-size: 2.5rem;
+}
+
+.faq-section{
+    padding: 40px 16px;
 }
