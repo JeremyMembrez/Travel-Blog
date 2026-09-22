@@ -1,0 +1,36 @@
+header {
+    background-color: rgba(78, 164, 135, 1);
+
+    display: flex;
+    justify-content: center;
+}
+
+header > img {
+    width: 56px;
+}
+
+.hero-section {
+    background-image:
+        url(../assets/img/landingscreen/landingscreen-background-yellow.png),
+        url(../assets/img/landingscreen/landingscreen-background-full.jpg);
+
+    background-position:
+        left top,
+        40% center;
+    background-repeat: no-repeat;
+    background-size:
+        60% 50%,
+        cover;
+
+    height: 100dvh;
+
+    position: relative;
+}
+
+.hero-section > img {
+    width: 160px;
+
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
