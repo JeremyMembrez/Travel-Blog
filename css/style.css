@@ -2,6 +2,10 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+
+    color: #54370D;
+    font-size: var(--mainfontsize);
+    font-family: var(--pala);
 }
 
 .content{
@@ -26,16 +30,15 @@
     height: 40px;
 }
 .headline > h2 {
-    font-size: 2.5rem;
-    color: rgba(78, 164, 135, 1);
-    font-family: 'Arima';
-    font-weight: 700;
+    font-size: var(--h2fontsize);
+    color: var(--green);
+    font-family: var(--arima);
+    font-weight: var(--hfontweight);
 }
 
 
-
 .highlights {
-   border: 3px solid red;
+  border: 3px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
