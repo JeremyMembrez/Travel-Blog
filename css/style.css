@@ -8,6 +8,17 @@
     font-family: var(--pala);
 }
 
+header {
+    background-color: rgba(78, 164, 135, 1);
+
+    display: flex;
+    justify-content: center;
+}
+
+header > img {
+    width: 56px;
+}
+
 .content{
     padding: 80px max(calc(50% - 720px), 36px);
 
