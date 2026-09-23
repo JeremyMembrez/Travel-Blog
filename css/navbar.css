@@ -1,0 +1,17 @@
+nav{
+    background-color: var(--yellow);
+    padding: 24px max(calc(50% - 720px), 25px);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav > a > img{
+    width: 40px;
+}
