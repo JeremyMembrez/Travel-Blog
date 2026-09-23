@@ -1,0 +1,39 @@
+footer {
+  background-color: rgba(78, 164, 135, 1);
+  height: 134px;
+  width: 100%;
+  padding: 30px 24px;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-text {
+  color: rgba(255, 255, 255, 1);
+  font-size: 19px;
+}
+
+.footer-text a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.footer-text div {
+  display: flex;
+
+  gap: 4px;
+}
+
+.footer-text img {
+  height: 16.5px;
+  width: 16.5px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  gap: 16px;
+}
