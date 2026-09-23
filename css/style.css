@@ -20,7 +20,7 @@ header > img {
 }
 
 .content{
-    padding: 80px max(calc(50% - 720px), 36px);
+    padding: 80px max(calc(50% - 720px), 15px);
 
     display: flex;
     flex-direction: column;
