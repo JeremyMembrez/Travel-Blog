@@ -28,11 +28,14 @@
     border-radius: 25px;
     border-width: 1px;
     border-style: solid;
-    font-size: 24px;
-    font-family: var(--arima);
-
     align-self: center;
 }
+.contactform-form > button > p{
+    font-size: 24px;
+    font-family: var(--arima);
+    font-weight: 700;
+}
+
 
 .contactform-privacypolicy{
     margin-top: 22px;
