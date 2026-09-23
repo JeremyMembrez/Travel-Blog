@@ -22,10 +22,12 @@
     border-style: solid;
 }
 .contactform-form > button{
+    background-color: #30303000;
     margin-top: 40px;
     width: 139px;
     height: 48px;
     border-radius: 25px;
+    border-color: #30303050;
     border-width: 1px;
     border-style: solid;
     align-self: center;
@@ -34,6 +36,8 @@
     font-size: 24px;
     font-family: var(--arima);
     font-weight: 700;
+    color: var(--grey);
+    letter-spacing: 5%;
 }
 
 
@@ -44,6 +48,4 @@
     align-items: center;
     gap: 8px;
 }
-
-
 

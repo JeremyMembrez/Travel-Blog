@@ -2,6 +2,7 @@
     --yellow: #F1C953;
     --green: rgba(78, 164, 135);
     --greentransparent: rgba(78, 164, 135, 0.2);
+    --grey: #737373; 
     
     --mainfontsize: clamp(16px, 2.2vw, 24px);
     --arima: 'Arima';

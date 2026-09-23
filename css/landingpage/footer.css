@@ -3,7 +3,7 @@ footer {
   height: 134px;
   width: 100%;
   padding: 30px 24px;
-  margin-bottom: calc(45px + 24px + 24px);
+  margin-bottom: calc(35px + 24px + 24px);
 
   display: flex;
   justify-content: space-evenly;
