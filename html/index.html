@@ -1,15 +1,29 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        
+        <link rel="stylesheet" href="../css/landingpage/landingscreen.css" />
+        <link rel="stylesheet" href="../css/landingpage/conatctform.css">
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
 
-  <body>
-    <main>
-      <section class="highlights">
+    <body>
+            <section class="landing-section">
+                <header>
+                    <img src="../assets/icons/logo.png" alt="Travel Blog Logo" />
+                </header>
+                <div class="hero-section">
+                    <img
+                        src="../assets/img/landingscreen/landingscreen-circle.png"
+                        alt="Destination Circle"
+                    />
+                </div>
+            </section>
+            <div class="content">
+                <section class="highlights">
         <div class="highlights-h2">
           <img src="/assets/icons/h2-icons/h2-icon-rocket.png" alt="rocket" />
           <h2>Highlights</h2>
@@ -30,10 +44,131 @@
           </div>
         </div>
       </section>
-    </main>
-
-
-    <footer>
+                <section class="faq-section">
+                    <div class="headline">
+                        <img
+                            src="../assets/icons/h2-icons/h2-icon-faq.png"
+                            alt="FAQ Icon"
+                        />
+                        <h2>FAQ</h2>
+                    </div>
+                    <div class="questions">
+                        <details>
+                            <summary>
+                                <span>
+                                    Wer steckt eigentlich hinter diesem Reiseblog?
+                                </span>
+                                <img
+                                    src="../assets/icons/faq/faq_arrow.svg"
+                                    alt="arrow_down"
+                                />
+                            </summary>
+                            <p>
+                                Wir sind ein dreiköpfiges Team aus reisebegeisterten
+                                Freunden. Auf diesem Blog teilen wir unsere gemeinsamen
+                                Abenteuer, Erfahrungen und Geheimtipps aus aller Welt
+                                mit euch.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>
+                                <span>
+                                    Welche Kamera und Ausrüstung nutzen wir für unsere
+                                    Fotos?
+                                </span>
+                                <img
+                                    src="../assets/icons/faq/faq_arrow.svg"
+                                    alt="arrow_down"
+                                />
+                            </summary>
+                            <p>
+                                Wir fotografieren meistens mit einer kompakten,
+                                spiegellosen Systemkamera und unseren Smartphones. Um
+                                Gewicht zu sparen, haben wir immer nur ein leichtes
+                                Allround-Objektiv und ein flexibles Reisestativ im
+                                Gepäck.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>
+                                <span>
+                                    Was haben wir auf unseren Reisen absolut immer
+                                    dabei?
+                                </span>
+                                <img
+                                    src="../assets/icons/faq/faq_arrow.svg"
+                                    alt="arrow_down"
+                                />
+                            </summary>
+                            <p>
+                                Neben unseren Pässen dürfen drei Dinge niemals fehlen:
+                                Eine leistungsstarke Powerbank für lange Tage, ein
+                                universeller Reiseadapter und natürlich eine
+                                Trinkflasche.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>
+                                <span>
+                                    Wie planen wir unsere Reisen und welche Tools nutzen
+                                    wir?
+                                </span>
+                                <img
+                                    src="../assets/icons/faq/faq_arrow.svg"
+                                    alt="arrow_down"
+                                />
+                            </summary>
+                            <p>
+                                Die Routenplanung machen wir meistens kollaborativ über
+                                digitale Karten wie Google My Maps. Für Unterkünfte,
+                                Flüge und Transport nutzen wir Apps wie Booking,
+                                Skyscanner und lokale ÖPNV-Planer, um flexibel zu
+                                bleiben.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>
+                                <span>
+                                    Welche Jahreszeit eignet sich am besten für die
+                                    Reiseziele auf unserem Blog?
+                                </span>
+                                <img
+                                    src="../assets/icons/faq/faq_arrow.svg"
+                                    alt="arrow_down"
+                                />
+                            </summary>
+                            <p>
+                                Da wir am liebsten in der Nebensaison reisen, empfehlen
+                                wir oft den Frühling oder Herbst. So umgehen wir die
+                                extremen Touristenströme und das Wetter ist meistens
+                                perfekt für Erkundungen zu Fuß.
+                            </p>
+                        </details>
+                    </div>
+                </section>
+                <section class="contactform">
+                    <div class="headline">
+                        <img src="../assets/icons/h2-icons/h2-icon-form.png" alt="Form Icon">
+                        <h2>Contact form</h2>
+                    </div>
+                    <form action="/html/form-submit.html" class="contactform-form">
+                            <label class="contactform-label" for="name">What's your name?</label>
+                                <input type="text" id="name" name="name" class="contactform-input">
+                            <label class="contactform-label" for="email">What's your email?</label>
+                                <input type="text" id="email" name="email" class="contactform-input">
+                            <label class="contactform-label" for="help">How can I help?</label>
+                                <input type="text" id="help" name="help" class="contactform-input">
+                            <div class="contactform-privacypolicy">
+                                <input type="checkbox" id="privacypolicy-check">
+                                <label for="checkprivacypolicy">I've read the <a href="https://de.wikipedia.org/wiki/Datenschutz-Grundverordnung">privacy policy</a> and agree to the processing of my data as outlined.</label>
+                            </div>
+                            <button type="submit">
+                                <p>Send</p>
+                            </button>
+                    </form>
+                </section>
+            </div>
+            <footer>
        <div class="footer-text">
         <a href="">Imprint</a>
         <p>Cookie Preferences</p>
@@ -60,5 +195,5 @@
         </a>
        </div>
     </footer>
-  </body>
+    </body>
 </html>
