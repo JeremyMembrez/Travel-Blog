@@ -1,0 +1,62 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 16px;
+}
+
+h3 {
+    color: var(--green);
+    font-weight: 600;
+    font-size: clamp(20px, 5vw, 40px);
+}
+
+h1 {
+    color: var(--yellow);
+    font-family: var(--arima);
+    font-size: var(--h1fontsize);
+}
+
+.head-left > p {
+    font-size: clamp(18px, 3vw, 32px);
+    padding: 24px 0px;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 16px;
+}
+
+.stats > div {
+    display: flex;
+    gap: 6px;
+}
+
+.stats img {
+    width: 16px;
+}
+
+.head-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--greentransparent);
+    border-radius: 30px;
+
+    text-align: center;
+    margin-top: 24px;
+}
+
+.head-right > img {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 75% center;
+
+    margin: 16px 0px;
+}

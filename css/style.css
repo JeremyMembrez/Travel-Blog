@@ -3,7 +3,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 
-    color: #54370D;
+    color: #54370d;
     font-size: var(--mainfontsize);
     font-family: var(--pala);
 }
@@ -19,7 +19,7 @@ header > img {
     width: 56px;
 }
 
-.content{
+.content {
     padding: 80px max(calc(50% - 720px), 15px);
 
     display: flex;
@@ -36,10 +36,12 @@ header > img {
 
     padding-bottom: 32px;
 }
+
 .headline > img {
     width: 40px;
     height: 40px;
 }
+
 .headline > h2 {
     font-size: var(--h2fontsize);
     color: var(--green);

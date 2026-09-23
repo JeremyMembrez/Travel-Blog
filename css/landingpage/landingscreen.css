@@ -7,8 +7,9 @@
         left top,
         40% center;
     background-repeat: no-repeat;
-    background-size: 60% 50%, cover;
-
+    background-size:
+        60% 50%,
+        cover;
     height: 100dvh;
 
     position: relative;
