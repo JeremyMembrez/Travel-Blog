@@ -124,15 +124,19 @@ input[type="radio"]:checked {
 
         margin: 93px 16px 0 16px;
         padding: 16px;
+
+        gap: 8px;
       }
 
       .slide-content p {
         color: rgba(255, 255, 255, 1);
+        line-height: 16px;
 
       }
 
       .slide-content h3 {
         color: rgba(255, 255, 255, 1);
         font-size: 28px;
+        line-height: 30px;
 
       }
