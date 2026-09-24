@@ -11,6 +11,7 @@
         />
         <link rel="stylesheet" href="../css/variablen.css" />
         <link rel="stylesheet" href="../css/fonts.css" />
+        <link rel="stylesheet" href="../css/landingpage/footer.css" />
         <link rel="stylesheet" href="../css/navbar.css" />
         <link rel="stylesheet" href="../css/sophia-blog/sophia-blog.css" />
         <link rel="stylesheet" href="../css/style.css" />
@@ -80,13 +81,13 @@
             </section>
             <section class="slider-section">
                 <h3>Highlights, die du in Tokyo erleben musst</h3>
-                <div class="slider">
-                    <img class="slider-element" src="" alt="">
-                    <img class="slider-element" src="" alt="">
-                    <img class="slider-element" src="" alt="">
-                    <img class="slider-element" src="" alt="">
-                    <img class="slider-element" src="" alt="">
-                </div>
+                <!-- <div class="slider">
+                    <img class="slider-element" src="" alt="" />
+                    <img class="slider-element" src="" alt="" />
+                    <img class="slider-element" src="" alt="" />
+                    <img class="slider-element" src="" alt="" />
+                    <img class="slider-element" src="" alt="" />
+                </div> -->
             </section>
             <section class="text-section">
                 <p>
@@ -105,7 +106,7 @@
                         in die verschiedenen Viertel eintauchen. Jedes davon
                         fühlt sich an wie eine eigene kleine Stadt:
                     </p>
-                    <br>
+                    <br />
                     <ol>
                         <li>
                             <span>Shinjuku:</span> Das Viertel der gigantischen
@@ -210,15 +211,38 @@
                     alt="Share-Arrow"
                 />
                 <div class="share-button">
-                    <img
-                        src="../assets/icons/blog/share-icon-yellow.svg"
-                        alt="Share-Icon"
+                    <input
+                        type="checkbox"
+                        name="share-button"
+                        id="share-button"
                     />
-                    <p>Teilen</p>
+                    <label for="share-button">
+                        <img
+                            src="../assets/icons/blog/share-icon-yellow.svg"
+                            alt="Share-Icon"
+                        />
+                        <p>Teilen</p>
+                    </label>
+                    <div class="share-links">
+                        <img
+                            src="../assets/icons/blog/share-icon-green.svg"
+                            alt="Share-Icon"
+                        />
+                        <div class="link-list">
+                            <a href="https://de.linkedin.com/" target="_blank"
+                                >LinkedIn</a
+                            >
+                            <a
+                                href="https://www.whatsapp.com/?lang=de"
+                                target="_blank"
+                                >WhatsApp</a
+                            >
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
-        <!-- <footer>
+        <footer>
             <div class="footer-text">
                 <a href="">Imprint</a>
                 <p>Cookie Preferences</p>
@@ -259,6 +283,20 @@
                     />
                 </a>
             </div>
-        </footer> -->
+        </footer>
+        <nav>
+            <a href="../html/index.html">
+                <img src="../assets/icons/navbar/navbar-home.png" />
+            </a>
+            <a href="#highlights">
+                <img src="../assets/icons/navbar/navbar-rocket_launch.png" />
+            </a>
+            <a href="#faqs">
+                <img src="../assets/icons/navbar/navbar-help.png" />
+            </a>
+            <a href="#contactform">
+                <img src="../assets/icons/navbar/navbar-contact.png" />
+            </a>
+        </nav>
     </body>
 </html>
