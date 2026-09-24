@@ -13,8 +13,8 @@
         <link rel="stylesheet" href="../css/fonts.css" />
         <link rel="stylesheet" href="../css/landingpage/footer.css" />
         <link rel="stylesheet" href="../css/navbar.css" />
-        <link rel="stylesheet" href="../css/sophia-blog/sophia-blog.css" />
         <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/sophia-blog/sophia-blog.css" />
     </head>
     <body>
         <header id="header">
@@ -90,7 +90,7 @@
                 </div> -->
             </section>
             <section class="text-section">
-                <p>
+                <p class="full-length-p">
                     Tokyo ist mit rund 37 Millionen Einwohnern im Großraum die
                     größte Metropolregion der Erde. Trotz dieser unvorstellbaren
                     Größe ist die Stadt eine der sichersten, saubersten und am
@@ -179,7 +179,7 @@
                         </li>
                     </ol>
                 </div>
-                <p>
+                <p class="full-length-p">
                     Was mich an Tokyo besonders fasziniert, auch wenn ich selbst
                     noch nicht dort war, ist diese fast schon paradoxe Ruhe
                     inmitten des absoluten Chaos. Man kann auf der
@@ -205,11 +205,17 @@
                     Dir hat der Artikel gefallen? Dann folg uns für mehr Content
                     und teile den Beitrag mit deinen Freunden!
                 </p>
-                <img
-                    class="share-arrow"
-                    src="../assets/icons/blog/share-arrow.svg"
-                    alt="Share-Arrow"
-                />
+                <picture>
+                    <source
+                        media="(min-width: 769px)"
+                        srcset="../assets/icons/blog/share-arrow-desktop.svg"
+                    />
+                    <img
+                        class="share-arrow"
+                        src="../assets/icons/blog/share-arrow.svg"
+                        alt="Share-Arrow"
+                    />
+                </picture>
                 <div class="share-button">
                     <input
                         type="checkbox"

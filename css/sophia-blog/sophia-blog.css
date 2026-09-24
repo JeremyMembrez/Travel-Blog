@@ -13,7 +13,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    padding: 40px 16px;
+    padding: 24px 16px;
 }
 
 h2 {
@@ -26,25 +26,34 @@ h1 {
     color: var(--yellow);
     font-family: var(--arima);
     font-size: var(--h1fontsize);
+    line-height: clamp(40px, 6vw, 64px);
 }
 
 h3 {
     font-family: var(--arima);
+    line-height: clamp(20px, 6vw, 34px);
 }
 
 p {
     font-size: clamp(16px, 2vw, 24px);
 }
 
+.head-left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 .head-left > p {
     font-size: clamp(18px, 3vw, 32px);
-    padding: 24px 0px;
+    line-height: clamp(26px, 6vw, 40px);
 }
 
 .stats {
     display: flex;
     flex-wrap: wrap;
     gap: 0px 16px;
+    padding: 24px 0px;
 }
 
 .stats > div {
@@ -56,17 +65,21 @@ p {
     width: 16px;
 }
 
+.stats p {
+    font-size: 16px;
+}
+
 .head-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 16px;
 
     background-color: var(--greentransparent);
     border-radius: 30px;
 
     text-align: center;
-    margin-top: 24px;
     padding: 16px;
 }
 
@@ -77,8 +90,6 @@ p {
     border-radius: 50%;
     object-fit: cover;
     object-position: 75% center;
-
-    margin-bottom: 16px;
 }
 
 .head-right > h3 {
@@ -138,6 +149,8 @@ p {
 .text-section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 32px;
 }
 
@@ -183,7 +196,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 48px;
+    gap: 26px;
 
     position: relative;
 }
@@ -192,13 +205,15 @@ p {
     font-family: var(--arima);
     font-weight: 500;
     font-size: clamp(18px, 2.5vw, 24px);
+    text-align: center;
+    max-width: 35ch;
 }
 
 .share-arrow {
     position: absolute;
-    bottom: 25%;
+    bottom: 20%;
     left: 0;
-    width: 28px;
+    width: 30px;
 }
 
 .share-button {
@@ -235,7 +250,7 @@ p {
     border-radius: 40px;
 
     position: absolute;
-    left: 65px;
+    left: 55px;
     transition: left 400ms linear;
 }
 
@@ -281,4 +296,136 @@ p {
     left: 130px;
     transform: translateX(0px);
     opacity: 1;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+    main {
+        padding: 80px 100px;
+        gap: 80px;
+    }
+
+    .head-section {
+        display: flex;
+        gap: 20px;
+    }
+
+    .head-right {
+        margin: 0;
+        width: 600px;
+    }
+
+    .stats {
+        padding: 40px 0px 0px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1279px) {
+    .head-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .head-right {
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    header img {
+        width: 72px;
+    }
+
+    main {
+        padding: 40px 60px;
+        gap: 60px;
+    }
+
+    .text-section {
+        gap: 80px;
+    }
+
+    .full-length-p {
+        max-width: 100%;
+    }
+
+    .share-arrow {
+        width: 100px;
+        left: 0%;
+        bottom: 10%;
+    }
+
+    .share-button > label {
+        left: 180px;
+    }
+
+    .share-button > input:checked ~ label {
+        left: 135px;
+    }
+
+    .share-button > input:checked ~ .share-links {
+        left: 250px;
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 950px) {
+    .share-arrow {
+        width: 80px;
+        left: 0%;
+        bottom: 10%;
+    }
+
+    .share-button > label {
+        left: 145px;
+    }
+
+    .share-button > input:checked ~ label {
+        left: 100px;
+    }
+
+    .share-button > input:checked ~ .share-links {
+        left: 215px;
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .share-arrow {
+        left: 10%;
+        bottom: 20%;
+    }
+
+    .share-button > label {
+        left: 115px;
+    }
+
+    .share-button > input:checked ~ label {
+        left: 70px;
+    }
+
+    .share-button > input:checked ~ .share-links {
+        left: 185px;
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 479px) {
+    .share-arrow {
+        left: 0;
+        bottom: 20%;
+    }
+
+    .share-button > label {
+        left: 100px;
+    }
+
+    .share-button > input:checked ~ label {
+        left: 70px;
+    }
+
+    .share-button > input:checked ~ .share-links {
+        left: 180px;
+        transform: translateX(0px);
+    }
 }
