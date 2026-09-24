@@ -9,12 +9,12 @@ footer {
   justify-content: space-evenly;
 }
 
-p {
+footer p {
   color: rgba(255, 255, 255, 1);
   font-size: var(--mainfontsize);
 }
 
-a {
+footer a {
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
   font-size: var(--mainfontsize);
