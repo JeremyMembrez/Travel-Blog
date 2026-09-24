@@ -1,0 +1,53 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.destinations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 16px;
+}
+
+.radiobutton-destination{
+    width: 100%;
+    padding: 20px 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    
+    gap: 30px;
+}
+
+.radiobutton-wrapper{
+    width: 100%;
+    display: flex;
+}
+
+.destination-img{
+    width: 200px;
+    height: 293px;
+    object-fit: cover;
+    border-radius: 10%;
+}
