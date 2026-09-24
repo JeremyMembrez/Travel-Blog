@@ -1,11 +1,22 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+    max-width: 65ch;
+}
+
 main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 40px;
     padding: 40px 16px;
 }
 
-h3 {
+h2 {
     color: var(--green);
     font-weight: 600;
     font-size: clamp(20px, 5vw, 40px);
@@ -15,6 +26,14 @@ h1 {
     color: var(--yellow);
     font-family: var(--arima);
     font-size: var(--h1fontsize);
+}
+
+h3 {
+    font-family: var(--arima);
+}
+
+p {
+    font-size: clamp(16px, 2vw, 24px);
 }
 
 .head-left > p {
@@ -48,6 +67,7 @@ h1 {
 
     text-align: center;
     margin-top: 24px;
+    padding: 16px;
 }
 
 .head-right > img {
@@ -58,5 +78,111 @@ h1 {
     object-fit: cover;
     object-position: 75% center;
 
-    margin: 16px 0px;
+    margin-bottom: 16px;
+}
+
+.head-right > h3 {
+    font-size: clamp(16px, 2vw, 18px);
+}
+
+.head-right > h4 {
+    font-size: clamp(16px, 2vw, 18px);
+    font-family: var(--arima);
+    font-weight: 400;
+}
+
+.head-right > p {
+    font-size: 16px;
+}
+
+.slider-section > h3 {
+    font-size: clamp(20px, 3vw, 32px);
+    font-weight: 600;
+
+    text-align: center;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.text-section span {
+    font-weight: 700;
+}
+
+.tipp-box {
+    background-color: var(--green);
+    width: 200px;
+    padding: 6px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    border-radius: 10px;
+    rotate: -13deg;
+}
+
+.tipp-box > p {
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--yellow);
+}
+
+.bottom-list ol {
+    background-color: var(--greentransparent);
+    padding: 24px 16px 24px 32px;
+
+    border-radius: 30px;
+}
+
+.bottom-list a {
+    font-weight: 700;
+    color: var(--green);
+
+    text-decoration: none;
+}
+
+.share-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+
+    position: relative;
+}
+
+.share-section > p {
+    font-family: var(--arima);
+    font-weight: 500;
+    font-size: clamp(18px, 2.5vw, 24px);
+}
+
+.share-arrow {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+}
+
+.share-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    width: 150px;
+    padding: 10px 24px;
+
+    background-color: var(--green);
+    border-radius: 40px;
+}
+
+.share-button > p {
+    font-family: var(--arima);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--yellow);
 }
