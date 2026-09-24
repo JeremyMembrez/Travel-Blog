@@ -25,6 +25,8 @@
 .destinations h4{
     font-size: 20px;
     font-family: var(--arima);
+    font-weight: 600;
+    letter-spacing: 3%;
 }
 
 .radiobutton-destination{
@@ -147,10 +149,20 @@
 }
 
 
+
+
+.destinations ol{
+    align-self: flex-start;
+    padding: 8%;
+}
+
+.destinations li{
+text-align: start;
+}
+
 .protips{
     background-color: #4EA48733;
     border-radius: 30px;
-    padding: 71px 1px;
 
     position: relative;
 }
@@ -158,18 +170,11 @@
     position: absolute;
     top: -80px;
 }
-.protips > li{
-    text-align: start;
+.protips ol{
+    padding: 30px 25px;
 }
 
 
 
 
 
-.destinations li{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-}
