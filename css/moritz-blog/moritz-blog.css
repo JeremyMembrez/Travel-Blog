@@ -26,13 +26,9 @@
 .radiobutton-destination{
     width: 100%;
     padding: 20px 10px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: black;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
     overflow: hidden;
@@ -41,13 +37,95 @@
 }
 
 .radiobutton-wrapper{
-    width: 100%;
+    width: 500%;
+    
     display: flex;
+    align-self: flex-start;
+
+    transition: all 250ms ease-in-out;
+    perspective: 1000px;
 }
 
 .destination-img{
-    width: 200px;
+    width: calc(60% / 5);
+    
     height: 293px;
     object-fit: cover;
     border-radius: 10%;
+    transition: all 250ms ease-in-out;
+    box-shadow: -9px 5px 20px 0 rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+
+
+/* Hier ist alles für den button nummer 1 */
+.radiobutton-destination:has(input[value="beach1"]:checked) .radiobutton-wrapper{
+    transform: translateX(60px);
+    
+}
+.radiobutton-destination:has(input[value="beach1"]:checked) .destination-img:nth-child(2){
+    transform: rotateY(-30deg) scale(0.9) translateX(-70px);
+    z-index: 1;
+}
+
+/* Hier ist alles für den button nummer 2 */
+.radiobutton-destination:has(input[value="beach2"]:checked) .radiobutton-wrapper{
+    transform: translateX(-130px);
+    
+}
+.radiobutton-destination:has(input[value="beach2"]:checked) .destination-img:nth-child(1){
+    transform: rotateY(-30deg) scale(0.9) translateX(70px);
+}
+.radiobutton-destination:has(input[value="beach2"]:checked) .destination-img:nth-child(3){
+    transform: rotateY(30deg) scale(0.9) translateX(15px);
+}
+
+/* Hier ist alles für den button nummer 3 */
+.radiobutton-destination:has(input[value="beach3"]:checked) .radiobutton-wrapper{
+    transform: translateX(-20%);
+    
+}
+.radiobutton-destination:has(input[value="beach3"]:checked) .destination-img:nth-child(2){
+    transform: rotateY(-30deg) scale(0.9) translateX(45px);
+}
+.radiobutton-destination:has(input[value="beach3"]:checked) .destination-img:nth-child(4){
+    transform: rotateY(30deg) scale(0.9) translateX(5px);
+}
+
+/* Hier ist alles für den button nummer 4 */
+.radiobutton-destination:has(input[value="beach4"]:checked) .radiobutton-wrapper{
+    transform: translateX(-530px);
+}
+.radiobutton-destination:has(input[value="beach4"]:checked) .destination-img:nth-child(3){
+    transform: rotateY(-30deg) scale(0.9) translateX(25px);
+}
+.radiobutton-destination:has(input[value="beach4"]:checked) .destination-img:nth-child(5){
+    transform: rotateY(30deg) scale(0.9) translateX(-5px);
+}
+
+/* Hier ist alles für den button nummer 5 */
+.radiobutton-destination:has(input[value="beach5"]:checked) .radiobutton-wrapper{
+    transform: translateX(-735px);
+    
+}
+.radiobutton-destination:has(input[value="beach5"]:checked) .destination-img:nth-child(4){
+    transform: rotateY(-30deg) scale(0.9) translateX(10px);
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+.destinations li{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
 }
