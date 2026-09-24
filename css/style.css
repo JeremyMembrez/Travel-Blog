@@ -6,6 +6,7 @@
     color: #54370d;
     font-size: var(--mainfontsize);
     font-family: var(--pala);
+    line-height: 20px;
 }
 
 header {
