@@ -1,24 +1,114 @@
-.hero-section {
-    background-image:
-        url(../../assets/img/landingscreen/landingscreen-background-yellow.png),
-        url(../../assets/img/landingscreen/landingscreen-background-full.jpg);
-
-    background-position:
-        left top,
-        40% center;
-    background-repeat: no-repeat;
-    background-size:
-        60% 50%,
-        cover;
+.landing-section {
     height: 100dvh;
+    background-image: url(../../assets/img/landingscreen/landingscreen-background-full.jpg);
+
+    background-position: 40% center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     position: relative;
+}
+
+.hero-section {
+    background-image: url(../../assets/img/landingscreen/landingscreen-background-yellow.png);
+
+    height: calc(100dvh - 76px);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 60% 60%;
 }
 
 .hero-section > img {
     width: 160px;
 
     position: absolute;
-    top: 25%;
-    left: 20%;
+    top: 35%;
+    left: 15%;
+}
+
+.hero-text {
+    width: 400px;
+
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    font-family: var(--arima);
+}
+
+.hero-text p {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+@media screen and (max-width: 999px) {
+    .hero-text {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+    .hero-section {
+        background-size: 50% 70%;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+    .hero-section {
+        background-size: 50% 80%;
+    }
+
+    .hero-section > img {
+        left: 25%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    .hero-section {
+        background-size: 50% 90%;
+        height: calc(100dvh - 104px);
+    }
+
+    .hero-section > img {
+        top: 55%;
+        left: 30%;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1279px) {
+    .hero-text {
+        top: 25%;
+        left: 3%;
+        scale: 0.9;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1400px) {
+    .landing-section {
+        height: 69dvh;
+    }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1440px) {
+    .landing-section {
+        height: 75dvh;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+    .hero-section {
+        height: calc(100dvh - 132px);
+        background-image: url(../../assets/img/landingscreen/landingscreen-yellow-desktop.svg);
+        background-size: 50%;
+    }
+
+    .hero-section > img {
+        top: 70%;
+        left: 35%;
+    }
 }
