@@ -1,15 +1,99 @@
 
+body{
+    line-height: clamp(20px, 5vw, 40px);
+}
 
+.intro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
 
+.first-text{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--green);
+}
 
+.intro-text{
+    display: flex;
+    flex-direction: column;
 
+    gap: 8px;
+}
+.intro-text h1{
+    font-family: var(--arima);
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--yellow);
+    line-height: 40px;
+}
+.intro-text p:nth-of-type(2){
+    font-size: 18px;
+}
 
+.beacharticle-stats{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 5px;
+    
 
+}
 
+.stat{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+.stat img{
+    width: 20px;
+}
+.stat:first-child img{
+    width: 18px;
+}
+.stat:last-child img{
+    width: 18px;
+}
 
+.intro-author{
+    background-color: #4EA48733;
+    border-radius: 30px;
+    padding: 16px 8px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.intro-author img{
+    width: 120px;
+    height: 120px;
+    
+    border-radius: 0%;
+}
+.author-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+.author-text h5{
+    font-family: var(--arima);
+    font-weight: 700;
+    font-size: 16px;
+}
+.author-text h6{
+    font-family: var(--arima);
+    font-weight: 400;
+    font-size: 16px;
 
-
+    padding-bottom: 8px;
+}
 
 
 
