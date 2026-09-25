@@ -16,6 +16,7 @@ summary {
     list-style: none;
 
     display: flex;
+    justify-content: space-between;
     gap: 8px;
 }
 
@@ -39,4 +40,5 @@ details > p {
     background-color: white;
     border-radius: 5px;
     padding: 4px 10px;
+    line-height: 30px;
 }

@@ -11,7 +11,7 @@
 }
 
 .content {
-    padding: 80px max(calc(50% - 720px), 15px);
+    padding: 80px max(calc(50% - 720px), 30px);
 
     display: flex;
     flex-direction: column;
@@ -38,4 +38,11 @@
     color: var(--green);
     font-family: var(--arima);
     font-weight: var(--hfontweight);
+}
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    .headline > img {
+        width: 48px;
+        height: 48px;
+    }
 }
