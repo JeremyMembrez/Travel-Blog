@@ -93,6 +93,10 @@ cursor: pointer;
   transition: all 1s ease-in-out;
 }
 
+.slider-a-wrapper a {
+  text-decoration: none;
+}
+
 .slider-a-element {
   width: calc(100% / 3);
   height: 100%;
