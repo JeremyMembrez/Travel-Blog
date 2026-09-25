@@ -27,7 +27,6 @@
 }
 
 .hero-text {
-    visibility: hidden;
     width: 400px;
 
     position: absolute;
@@ -44,6 +43,12 @@
     font-size: 28px;
     font-weight: 500;
     line-height: 35px;
+}
+
+@media screen and (max-width: 999px) {
+    .hero-text {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 400px) and (max-width: 500px) {
@@ -80,11 +85,6 @@
         left: 3%;
         scale: 0.9;
         width: 300px;
-    }
-}
-@media screen and (min-width: 1000px) and (max-width: 1440px) {
-    .hero-text {
-        visibility: visible;
     }
 }
 
