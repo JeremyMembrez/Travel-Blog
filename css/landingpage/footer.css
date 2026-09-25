@@ -1,5 +1,4 @@
 footer {
-  border: 3px solid red;
   background-color: var(--green);
   height: 134px;
   width: 100%;
@@ -28,17 +27,12 @@ footer a {
   gap: 4px;
 }
 
-.footer-text {
-  border: 3px solid rgb(208, 255, 0);
-}
-
 .footer-text img {
   height: 16.5px;
   width: 16.5px;
 }
 
 .footer-icons {
-  border: 3px solid rgb(0, 255, 179);
   display: flex;
   justify-content: center;
   align-items: flex-end;
