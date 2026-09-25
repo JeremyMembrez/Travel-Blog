@@ -1,3 +1,7 @@
+* {
+    line-height: unset;
+}
+
 h1,
 h2,
 h3,
@@ -332,10 +336,6 @@ p {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1440px) {
-    header img {
-        width: 72px;
-    }
-
     main {
         padding: 40px 60px;
         gap: 60px;

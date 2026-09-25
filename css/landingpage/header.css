@@ -1,0 +1,133 @@
+header {
+    background-color: rgba(78, 164, 135, 1);
+
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+
+    width: 100%;
+    padding: 30px 140px;
+}
+
+header > img {
+    width: 56px;
+}
+
+header ul {
+    display: flex;
+    gap: 70px;
+
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+header li {
+    display: flex;
+    flex-direction: column;
+}
+
+header li img {
+    opacity: 1;
+}
+
+.hover-highlights {
+    width: 120px;
+    opacity: 0;
+
+    position: absolute;
+    top: 35px;
+}
+
+.hover-faq {
+    width: 60px;
+    opacity: 0;
+
+    position: absolute;
+    top: 42px;
+    left: 170px;
+}
+
+.hover-contact {
+    width: 100px;
+    opacity: 0;
+
+    position: absolute;
+    top: 38px;
+    left: 280px;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header a {
+    text-decoration: none;
+    font-family: var(--arima);
+    font-weight: 700;
+    color: white;
+    font-size: 24px;
+    z-index: 2;
+
+    line-height: unset;
+}
+
+header a:active {
+    color: var(--yellow);
+}
+
+header a:hover ~ img {
+    opacity: 1;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    header img {
+        width: 72px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    header {
+        padding: 20px 80px;
+    }
+
+    header img {
+        width: 64px;
+    }
+
+    header a {
+        font-size: 22px;
+    }
+
+    .hover-highlights {
+        width: 110px;
+        top: 32px;
+    }
+
+    .hover-faq {
+        width: 50px;
+
+        top: 39px;
+        left: 164px;
+    }
+
+    .hover-contact {
+        width: 90px;
+
+        top: 36px;
+        left: 270px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-header {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+
+        padding: 10px 40px;
+    }
+}

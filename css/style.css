@@ -2,22 +2,12 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scroll-padding-top: 20px;
 
     color: #54370d;
     font-size: var(--mainfontsize);
     font-family: var(--pala);
     line-height: 20px;
-}
-
-header {
-    background-color: rgba(78, 164, 135, 1);
-
-    display: flex;
-    justify-content: center;
-}
-
-header > img {
-    width: 56px;
 }
 
 .content {
