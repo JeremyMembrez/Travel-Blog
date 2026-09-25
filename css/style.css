@@ -6,9 +6,7 @@
 
     color: #54370d;
     font-size: var(--mainfontsize);
-    font-family: var(--pala);
-    line-height: 20px;
-}
+    font-family: var(--pala);}
 
 .content {
     padding: 80px max(calc(50% - 720px), 30px);
