@@ -315,13 +315,24 @@ text-align: start;
 }
 .shareslider > img{
     visibility: hidden;
+    width: 25px;
+    transition: all 250ms ease-in;
 }
-.shareslider > .sharelinks{
+.sharelinks{
     visibility: hidden;
     display: flex;
     flex-direction: column;
-    margin-left: 5px;
+    gap: 10px;
+
+    transition: all 250ms ease-in;
 }
+.sharelinks a{
+    color:  var(--green);
+    font-family: var(--arima);
+    font-weight: 600;
+    letter-spacing: 5%;
+}
+
 
 #sharebutton:checked ~ .shareslider > label{
     transform: translateX(-20%);
@@ -335,6 +346,7 @@ text-align: start;
 }
 #sharebutton:checked ~ .shareslider > img{
     visibility: visible;
+    transform: translateX(-50%);
 }
 #sharebutton:checked ~ .shareslider > .sharelinks{
     visibility: visible;
