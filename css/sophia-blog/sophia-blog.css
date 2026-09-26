@@ -115,23 +115,23 @@ p {
     font-weight: 600;
 
     text-align: center;
-    padding-bottom: 48px;
 }
 
 .slider {
-    height: 250px;
+    height: 330px;
 
     display: flex;
-    gap: 10px;
+    justify-content: center;
+
+    margin: 90px 0px;
 }
 
 .slider-element {
-    width: 140px;
-    height: 80%;
+    width: 230px;
+    height: 100%;
     border-radius: 16px;
     z-index: 1;
 
-    background-color: blueviolet;
     box-shadow: -10px 14px 10px rgba(3, 7, 18, 0.15);
 
     transform: perspective(250px) rotateY(20deg) translateX(-20px);

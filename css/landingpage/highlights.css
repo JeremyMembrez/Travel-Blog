@@ -16,7 +16,7 @@
 }
 
 .highlights h2 {
-    color: var(--green);
+  color: var(--green);
   font-family: var(--arima);
   font-size: var(--h2fontsize);
   font-weight: var(--hfontweight);
@@ -48,26 +48,26 @@
 .slider-a > input {
   appearance: none;
 
-background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
 
-height: 28px;
-width: 28px;
+  height: 28px;
+  width: 28px;
 
-border-radius: 28px;
+  border-radius: 28px;
 
   cursor: pointer;
 }
 
 .slider-a > input:checked {
-appearance: none;
+  appearance: none;
 
-background-color: rgba(241, 201, 83, 1);
+  background-color: rgba(241, 201, 83, 1);
 
-border-radius: 20px;
-height: 28px;
-width: 40px;
+  border-radius: 20px;
+  height: 28px;
+  width: 40px;
 
-cursor: pointer;
+  cursor: pointer;
 }
 
 .radio-button {
@@ -135,7 +135,7 @@ cursor: pointer;
   background-position: center;
 }
 
-.slide-content { 
+.slide-content {
   border-left: 2px solid rgba(255, 255, 255, 0.45);
   border-right: 2px solid rgba(255, 255, 255, 0.45);
   background-color: rgba(255, 255, 255, 0.1);
@@ -158,4 +158,50 @@ cursor: pointer;
   color: rgba(255, 255, 255, 1);
   font-size: 28px;
   line-height: 30px;
+}
+
+@media screen and (min-width: 1440px) {
+  .slider-a {
+    width: 1200px;
+    height: 530px;
+  }
+
+  .slide-content {
+    padding: 16px 24px;
+    margin: 72px 300px 24px 24px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  .slider-a {
+    width: 1200px;
+    height: 530px;
+  }
+
+  .slide-content {
+    padding: 16px 24px;
+    margin: 72px 300px 24px 24px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  .slider-a {
+    width: 700px;
+    height: 530px;
+  }
+
+  .slide-content {
+    padding: 16px 24px;
+    margin: 72px 200px 24px 24px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+}
+
+@media screen and (max-width: 375px) {
+  .slider-a {
+    width: 304px;
+    height: 530px;
+  }
 }
