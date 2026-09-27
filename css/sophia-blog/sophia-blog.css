@@ -302,7 +302,7 @@ p {
     opacity: 1;
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1440px) {
+@media screen and (min-width: 1280px) {
     main {
         padding: 80px 100px;
         gap: 80px;
@@ -335,12 +335,14 @@ p {
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+@media screen and (min-width: 769px) and (max-width: 1279px) {
     main {
         padding: 40px 60px;
         gap: 60px;
     }
+}
 
+@media screen and (min-width: 769px) {
     .text-section {
         gap: 80px;
     }
@@ -427,5 +429,11 @@ p {
     .share-button > input:checked ~ .share-links {
         left: 180px;
         transform: translateX(0px);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        padding: 80px max(100px, calc(50% - 720px));
     }
 }

@@ -81,7 +81,7 @@ header a:hover ~ img {
     opacity: 1;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+@media screen and (min-width: 769px) {
     header img {
         width: 72px;
     }
@@ -129,5 +129,11 @@ header a:hover ~ img {
         justify-content: center;
 
         padding: 10px 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    header {
+        padding: 30px max(140px, calc(50% - 720px));
     }
 }

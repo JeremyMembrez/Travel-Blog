@@ -1,5 +1,5 @@
 .landing-section {
-    height: 100dvh;
+    height: calc(100dvh - 76px);
     background-image: url(../../assets/img/landingscreen/landingscreen-background-full.jpg);
 
     background-position: 40% center;
@@ -22,7 +22,7 @@
     width: 160px;
 
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 15%;
 }
 
@@ -30,7 +30,7 @@
     width: 400px;
 
     position: absolute;
-    top: 35%;
+    top: 20%;
     left: 5%;
 }
 
@@ -64,43 +64,40 @@
 
     .hero-section > img {
         left: 25%;
+        top: 40%;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1279px) {
+    .landing-section {
+        height: calc(100dvh - 104px);
+    }
+
     .hero-section {
         background-size: 50% 90%;
         height: calc(100dvh - 104px);
     }
 
     .hero-section > img {
-        top: 55%;
+        top: 50%;
         left: 30%;
     }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1279px) {
     .hero-text {
-        top: 25%;
+        top: 15%;
         left: 3%;
         scale: 0.9;
         width: 300px;
     }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1400px) {
+@media screen and (min-width: 1280px) {
     .landing-section {
-        height: 69dvh;
+        height: 53dvh;
     }
-}
 
-@media screen and (min-width: 1401px) and (max-width: 1440px) {
-    .landing-section {
-        height: 75dvh;
-    }
-}
-
-@media screen and (min-width: 1280px) and (max-width: 1440px) {
     .hero-section {
         height: calc(100dvh - 132px);
         background-image: url(../../assets/img/landingscreen/landingscreen-yellow-desktop.svg);
@@ -108,7 +105,28 @@
     }
 
     .hero-section > img {
-        top: 70%;
+        top: 65%;
         left: 35%;
+    }
+}
+
+@media screen and (min-width: 1401px) {
+    .landing-section {
+        height: 58dvh;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .landing-section {
+        margin: 0px max(0px, calc(50% - 720px));
+        height: 565px;
+    }
+
+    .hero-text {
+        top: 115px;
+    }
+
+    .hero-section > img {
+        top: 370px;
     }
 }
