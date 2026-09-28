@@ -9,6 +9,10 @@ header {
     padding: 30px 140px;
 }
 
+header > a {
+    display: contents;
+}
+
 header > img {
     width: 56px;
 }

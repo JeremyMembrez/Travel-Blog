@@ -24,6 +24,8 @@
     position: absolute;
     top: 30%;
     left: 15%;
+
+    animation: circle-rotate 8s linear infinite;
 }
 
 .hero-text {
@@ -130,3 +132,8 @@
         top: 370px;
     }
 }
+
+@keyframes circle-rotate {
+    from {rotate: 0deg;}
+    to {rotate: 360deg;}
+} 
