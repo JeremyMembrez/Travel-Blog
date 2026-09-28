@@ -115,21 +115,21 @@
 }
 
 .element-one {
-  background-image: url(../assets/img/highlights/content-highlights-carousel-beach.jpg);
+  background-image: url(../../assets/img/highlights/content-highlights-carousel-beach.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .element-two {
-  background-image: url(../assets/img/highlights/content-highlights-carousel-osaka.jpg);
+  background-image: url(../../assets/img/highlights/content-highlights-carousel-osaka.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .element-three {
-  background-image: url(../assets/img/highlights/content-highlights-carousel-mount.jpg);
+  background-image: url(../../assets/img/highlights/content-highlights-carousel-mount.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
