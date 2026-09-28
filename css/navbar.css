@@ -16,3 +16,23 @@ nav > a > img{
     width: 35px;
     height: 35px;
 }
+
+@media screen and (min-width: 1280px) {
+    nav{
+        display:none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    nav{
+        display:none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 769px) {
+    
+}
+
+@media screen and (max-width: 319px) {
+    
+}

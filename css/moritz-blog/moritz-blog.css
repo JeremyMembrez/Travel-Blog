@@ -361,7 +361,7 @@ text-align: start;
     
 }
 
-@media screen and (min-width: 320px)(max-width: 769px) {
+@media screen and (min-width: 320px) and (max-width: 769px) {
     
 }
 
