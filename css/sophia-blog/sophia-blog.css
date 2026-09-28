@@ -475,6 +475,8 @@ p {
         width: 20px;
         height: 20px;
         border-radius: 50%;
+
+        transition: all 500ms ease-in-out;
     }
 
     input[type="radio"]:checked {
