@@ -151,13 +151,13 @@
 
 .slide-content p {
   color: rgba(255, 255, 255, 1);
-  line-height: 16px;
+  line-height: clamp(16px, 3vw, 32px);
 }
 
 .slide-content h3 {
   color: rgba(255, 255, 255, 1);
   font-size: 28px;
-  line-height: 30px;
+  line-height: clamp(30px, 6vw, 60);
 }
 
 @media screen and (min-width: 1440px) {
