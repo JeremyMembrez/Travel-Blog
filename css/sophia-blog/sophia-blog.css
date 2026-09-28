@@ -113,8 +113,13 @@ p {
     text-align: center;
 }
 
-.slider {
-    height: 300px;
+.slider-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    height: 280px;
 
     display: flex;
     justify-content: center;
@@ -135,22 +140,6 @@ p {
 
     transition: all 250ms ease-in-out;
     margin: 0 -20px;
-}
-
-.slider-element:hover {
-    z-index: 2;
-    transform: perspective(250px) rotateY(0deg) scaleX(1.5) scaleY(1.5);
-}
-
-.slider-element:hover ~ .slider-element {
-    transform: perspective(250px) rotateY(-20deg) translateX(100px);
-    margin: 0;
-}
-
-.slider:has(.slider-element:hover)
-    .slider-element:not(:hover):not(.slider-element:hover ~ .slider-element) {
-    transform: perspective(250px) rotateY(20deg) translateX(-100px);
-    margin: 0;
 }
 
 .text-section {
@@ -438,5 +427,116 @@ p {
 @media screen and (min-width: 1440px) {
     main {
         padding: 80px max(100px, calc(50% - 720px));
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .slider input {
+        display: none;
+    }
+
+    .slider-element:hover {
+        z-index: 2;
+        transform: perspective(250px) rotateY(0deg) scaleX(1.5) scaleY(1.5);
+    }
+
+    .slider-element:hover ~ .slider-element {
+        transform: perspective(250px) rotateY(-20deg) translateX(100px);
+        margin: 0;
+    }
+
+    .slider-wrapper:has(.slider-element:hover)
+        .slider-element:not(:hover):not(
+            .slider-element:hover ~ .slider-element
+        ) {
+        transform: perspective(250px) rotateY(20deg) translateX(-100px);
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .slider {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        width: 100%;
+        height: 370px;
+        position: relative;
+        margin-top: 60px;
+    }
+
+    .slider input {
+        margin: 10px;
+        z-index: 2;
+
+        transform: scale(1.8);
+    }
+
+    .slider-wrapper {
+        display: flex;
+        gap: 20px;
+        width: 500%;
+        height: 82%;
+
+        position: absolute;
+        top: 0;
+        margin: 0;
+
+        transition: all 1s ease-in-out;
+    }
+
+    .slider-element {
+        display: flex;
+        margin: 0;
+
+        width: calc(25% / 5);
+        height: 100%;
+
+        transform: rotateY(0deg);
+    }
+
+    .slider input[value="one"]:checked ~ .slider-wrapper {
+        transform: translateX(calc(55% / 5));
+    }
+
+    .slider input[value="two"]:checked ~ .slider-wrapper {
+        transform: translateX(calc(27.5% / 5));
+    }
+
+    .slider input[value="three"]:checked ~ .slider-wrapper {
+        transform: translateX(calc(0 / 5));
+    }
+
+    .slider input[value="four"]:checked ~ .slider-wrapper {
+        transform: translateX(calc(-27.5% / 5));
+    }
+
+    .slider input[value="five"]:checked ~ .slider-wrapper {
+        transform: translateX(calc(-55% / 5));
+    }
+
+    .slider:has(input[value="one"]:checked) .slider-wrapper > :nth-child(1),
+    .slider:has(input[value="two"]:checked) .slider-wrapper > :nth-child(2),
+    .slider:has(input[value="three"]:checked) .slider-wrapper > :nth-child(3),
+    .slider:has(input[value="four"]:checked) .slider-wrapper > :nth-child(4),
+    .slider:has(input[value="five"]:checked) .slider-wrapper > :nth-child(5) {
+        transform: scale(1.1);
+    }
+
+    .slider:has(input[value="one"]:checked) .slider-wrapper > :nth-child(1) ~ .slider-element,
+    .slider:has(input[value="two"]:checked) .slider-wrapper > :nth-child(2) ~ .slider-element,
+    .slider:has(input[value="three"]:checked) .slider-wrapper > :nth-child(3) ~ .slider-element,
+    .slider:has(input[value="four"]:checked) .slider-wrapper > :nth-child(4) ~ .slider-element,
+    .slider:has(input[value="five"]:checked) .slider-wrapper > :nth-child(5) ~ .slider-element {
+        transform: perspective(350px) rotateY(-25deg) scale(1);
+    }
+
+    .slider:has(input[value="one"]:checked) .slider-wrapper > :has(~ :nth-child(1)),
+    .slider:has(input[value="two"]:checked) .slider-wrapper > :has(~ :nth-child(2)),
+    .slider:has(input[value="three"]:checked) .slider-wrapper > :has(~ :nth-child(3)),
+    .slider:has(input[value="four"]:checked) .slider-wrapper > :has(~ :nth-child(4)),
+    .slider:has(input[value="five"]:checked) .slider-wrapper > :has(~ :nth-child(5)) {
+        transform: perspective(350px) rotateY(25deg) scale(1);
     }
 }
