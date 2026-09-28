@@ -20,16 +20,16 @@ header > img {
 }
 
 main {
-  border: 3px solid red;
+  /* border: 3px solid red; */
 }
 
 .content {
-  padding: 80px max(calc(50% - 720px), 15px);
+  padding: 80px 15px 0 15px;
 
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 80px;
+  gap: 40px;
 }
 
 .position-content-author {
@@ -53,10 +53,9 @@ main {
 
 .content-author {
   /* border: 3px solid red; */
-    display: flex;
-    flex-direction: column;
-    gap:8px;
-    
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .content h3 {
@@ -69,15 +68,15 @@ main {
 }
 
 .content h2 {
-    color: var(--yellow);
-    font-family: var(--arima);
-    font-size: var(--h2fontsize);
-    font-weight: var(--hfontweight);
-    line-height: 64px;
+  color: var(--yellow);
+  font-family: var(--arima);
+  font-size: var(--h2fontsize);
+  font-weight: var(--hfontweight);
+  line-height: 64px;
 }
 
 .icons-set p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .icon {
@@ -85,7 +84,7 @@ main {
 }
 
 .icon-section {
-  /* border: 3px solid red; */
+  /* border: 3px solid rgb(76, 0, 255); */
   display: flex;
 
   gap: 10px;
@@ -119,7 +118,6 @@ main {
   width: 120px;
 
   border-radius: 120px;
-
 }
 
 .text-author h4 {
@@ -127,7 +125,6 @@ main {
   font-size: 18px;
   font-family: var(--arima);
   font-weight: 700;
-
 }
 
 .text-author p {
@@ -145,7 +142,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .rain-content {
@@ -168,10 +164,209 @@ main {
 
 .rain-content img {
   height: 450px;
-  width: 650px;
+  width: 640px;
 
   border-radius: 53px;
   box-shadow: -2px 4px 11.6px 0px rgba(0, 0, 0, 0.25);
 
   object-fit: cover;
+}
+
+.rain-content p {
+  font-size: var(--mainfontsize);
+}
+
+.diagram {
+  max-width: min-content;
+
+  display: flex;
+  flex-direction: column;
+  
+  gap: 10px;
+}
+
+.diagram-position {
+  display: flex;
+  justify-content: center;
+
+  gap: 80px;
+
+}
+
+.diagram h3 {
+  color: rgba(84, 55, 13, 1);
+  font-size: 32px;
+  font-family: var(--arima);
+  font-weight: 600;
+}
+
+.diagram img {
+  height: 475px;
+  width: 525px;
+
+  border-radius: 53px;
+  box-shadow: -2px 4px 11.6px 0px rgba(0, 0, 0, 0.25);
+
+  object-fit: cover;
+}
+
+/* .share-container {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  font-family: sans-serif;
+}
+
+.share-checkbox {
+  display: none;
+}
+
+.share-button {
+  background-color: #4da384;
+  color: #e4be5c;    
+
+  padding: 10px 24px;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 2;
+  
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.share-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.share-menu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: absolute;
+  left: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-20px);
+  transition: transform 0.4s ease, opacity 0.4s ease, visibility 0.4s;
+  white-space: nowrap;
+  padding-left: 15px;
+}
+
+.menu-main-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.share-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.share-link {
+  color: #4da384;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.share-checkbox:checked ~ .share-button {
+  transform: translateX(-40px);
+}
+
+.share-checkbox:checked ~ .share-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-40px); 
+} */
+
+@media screen and (min-width: 1440px) {
+  .content {
+    padding: 80px max(calc(50% - 720px), 30px);
+  }
+
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  .icon-section {
+  flex-wrap: wrap;
+}
+  
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  .icon-section {
+  flex-wrap: wrap;
+}
+
+  .diagram-position {
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.diagram {
+  align-items: center;
+}
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+.content {
+padding: 10px 10px;
+
+  gap: 40px;
+}
+
+.icon-section {
+  flex-wrap: wrap;
+
+  gap: 6px;
+}
+
+.icons-set {
+  gap: 2px;
+}
+
+.position-content-author {
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.rain-content img {
+  height: 180px;
+  width: 300px;
+
+  border-radius: 30px;
+}
+
+  .diagram-position {
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.diagram {
+  align-items: center;
+
+  gap: 10px;
+}
+
+.diagram img {
+  height: 300px;
+  width: 300px;
+
+  border-radius: 30px;
+}
+
 }
