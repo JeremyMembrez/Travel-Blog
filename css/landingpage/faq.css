@@ -44,7 +44,6 @@ details > p {
     background-color: white;
     border-radius: 5px;
     padding: 4px 10px;
-    line-height: 30px;
 }
 
 details::details-content {

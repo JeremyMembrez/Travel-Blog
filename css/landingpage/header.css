@@ -73,8 +73,6 @@ header a {
     color: white;
     font-size: 24px;
     z-index: 2;
-
-    line-height: unset;
 }
 
 header a:active {

@@ -23,6 +23,7 @@ footer a {
 
 .footer-text div {
   display: flex;
+  align-items: center;
 
   gap: 4px;
 }
@@ -90,5 +91,11 @@ footer a {
 @media screen and (max-width: 375px) {
   footer {
     padding: 16px 4px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  footer {
+    margin-bottom: 0;
   }
 }

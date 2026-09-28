@@ -115,21 +115,21 @@
 }
 
 .element-one {
-  background-image: url(../assets/img/highlights/content-highlights-carousel-beach.jpg);
+  background-image: url(../../assets/img/highlights/content-highlights-carousel-beach.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .element-two {
-  background-image: url(../assets/img/highlights/content-highlights-carousel-osaka.jpg);
+  background-image: url(../../assets/img/highlights/content-highlights-carousel-osaka.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .element-three {
-  background-image: url(../assets/img/highlights/content-highlights-carousel-mount.jpg);
+  background-image: url(../../assets/img/highlights/content-highlights-carousel-mount.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -151,13 +151,13 @@
 
 .slide-content p {
   color: rgba(255, 255, 255, 1);
-  line-height: 16px;
+  line-height: clamp(16px, 3vw, 32px);
 }
 
 .slide-content h3 {
   color: rgba(255, 255, 255, 1);
   font-size: 28px;
-  line-height: 30px;
+  line-height: clamp(30px, 6vw, 60);
 }
 
 @media screen and (min-width: 1440px) {
