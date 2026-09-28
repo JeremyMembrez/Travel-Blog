@@ -53,12 +53,20 @@
     border-style: solid;
     align-self: center;
 }
+
 .contactform-form > button > p{
     font-size: 24px;
     font-family: var(--arima);
     font-weight: 700;
     color: var(--grey);
     letter-spacing: 5%;
+}
+
+.contactform-form > button:hover{
+    background-color: var(--green);
+}
+.contactform-form > button > p:hover{
+    color: var(--yellow);
 }
 
 

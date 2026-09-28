@@ -108,7 +108,7 @@ body *{
     gap: 16px;
 }
 .destinations h4{
-    font-size: 20px;
+    font-size: clamp(20px, 5vw, 32px);
     font-family: var(--arima);
     font-weight: 600;
     letter-spacing: 3%;
@@ -116,7 +116,7 @@ body *{
 
 .radiobutton-destination{
     width: 100%;
-    padding: 20px 10px;
+    padding: 100px 10px;
 
     display: flex;
     flex-direction: column;
@@ -325,32 +325,47 @@ text-align: start;
         display: flex;
         justify-content: center;
 
+        gap: 20px;
     }
     .radiobutton-destination{
         overflow: visible;
         width: 100%;
         
-
     }
     .destination-img{
         width: calc(100% / 5);
-        height: clamp(220px, 500vw, 440px);
+        height: clamp(220px, 500vw, 350px);
         
         transition: all 250ms ease-in-out;
-        transform: rotateY(5deg);
+        transform: rotateY(10deg);
         margin: 0 -5%;
 
-
         cursor: pointer;
+        z-index: 1;
+    }
+    .destination-img:hover {
+        transform: rotateY(0deg);
+        z-index: 2;
+        transform: scale(1.1);
+    }
 
+    .destination-img:hover ~ .destination-img {
+        transform: rotateY(-10deg) translateX(50%) scale(0.8);
+    }
+
+    .radiobutton-wrapper:has(.destination-img:hover)
+    .destination-img:not(:hover):not(.destination-img:hover ~ .destination-img) {
+        transform: rotateY(10deg) translateX(-50%) scale(0.8);
+    }
+
+    .shareslider{
+        margin-left: 100px;
     }
 }
-
 
 @media screen and (max-width: 769px) {
     .radiobutton-wrapper{
         perspective: 1000px;
-
     }
     /* Hier ist alles für den button nummer 1 */
     .radiobutton-destination:has(input[value="beach1"]:checked) .radiobutton-wrapper{
@@ -412,11 +427,4 @@ text-align: start;
         transform: rotateY(30deg) scale(0.9) translateX(-5%);
         z-index: 1;
     }
-
 }
-
-
-
-
-
-
