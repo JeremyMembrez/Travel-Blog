@@ -1,7 +1,3 @@
-* {
-    line-height: unset;
-}
-
 h1,
 h2,
 h3,
@@ -118,7 +114,7 @@ p {
 }
 
 .slider {
-    height: 330px;
+    height: 300px;
 
     display: flex;
     justify-content: center;
@@ -127,27 +123,34 @@ p {
 }
 
 .slider-element {
-    width: 230px;
+    width: 200px;
     height: 100%;
     border-radius: 16px;
     z-index: 1;
 
     box-shadow: -10px 14px 10px rgba(3, 7, 18, 0.15);
 
-    transform: perspective(250px) rotateY(20deg) translateX(-20px);
+    transform: perspective(250px) rotateY(20deg);
     transform-origin: 50% 50%;
 
     transition: all 250ms ease-in-out;
+    margin: 0 -20px;
 }
 
 .slider-element:hover {
     z-index: 2;
-    transform: perspective(250px) rotateY(0deg) translateX(0px) scaleX(1.5)
-        scaleY(1.5);
+    transform: perspective(250px) rotateY(0deg) scaleX(1.5) scaleY(1.5);
 }
 
 .slider-element:hover ~ .slider-element {
-    transform: perspective(250px) rotateY(-20deg) translateX(20px);
+    transform: perspective(250px) rotateY(-20deg) translateX(100px);
+    margin: 0;
+}
+
+.slider:has(.slider-element:hover)
+    .slider-element:not(:hover):not(.slider-element:hover ~ .slider-element) {
+    transform: perspective(250px) rotateY(20deg) translateX(-100px);
+    margin: 0;
 }
 
 .text-section {
