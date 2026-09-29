@@ -65,11 +65,16 @@ p {
 
 .stats > div {
     display: flex;
+    align-items: center;
     gap: 6px;
 }
 
 .stats img {
     width: 16px;
+}
+
+.stats .reading-time-icon {
+    padding-top: 3px;
 }
 
 .stats p {
