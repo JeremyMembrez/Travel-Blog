@@ -8,6 +8,16 @@
   font-family: var(--pala);
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+}
+
+main {
+  flex: 1;
+}
+
 header {
   background-color: rgba(78, 164, 135, 1);
 
@@ -73,6 +83,12 @@ header > img {
   font-size: 16px;
 }
 
+#glasses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .icon-section {
   max-height: max-content;
   max-width: max-content;
@@ -104,6 +120,8 @@ header > img {
   border-radius: 30px;
 
   gap: 16px;
+
+  max-width: 500px;
 }
 
 .text-author img {
@@ -261,7 +279,8 @@ header > img {
   opacity: 0; /*vollständig unsichtbar*/
   visibility: hidden; /*macht unsichtbar, PLatz bleibt aber erhalten*/
   transform: translateX(-20px);
-  transition: transform 250ms ease, opacity 250ms ease, visibility 250ms;
+  transition: transform 250ms ease, opacity 250ms ease, visibility 250ms; 
+  /* visibility schaltet die Sichtbarkeit um*/
   white-space: nowrap; /*verhindert automatischen Zeilenumsprung*/
   padding-left: 15px;
 }

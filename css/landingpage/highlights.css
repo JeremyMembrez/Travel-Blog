@@ -45,7 +45,7 @@
   overflow: hidden;
 }
 
-.slider-a > input {
+.slider-a > input { /*Styling der weißen Label*/
   appearance: none;
 
   background-color: rgba(255, 255, 255, 1);
@@ -58,7 +58,7 @@
   cursor: pointer;
 }
 
-.slider-a > input:checked {
+.slider-a > input:checked { /*Styling des aktiven Labels*/
   appearance: none;
 
   background-color: rgba(241, 201, 83, 1);
@@ -68,6 +68,7 @@
   width: 40px;
 
   cursor: pointer;
+  transition-duration: 250ms;
 }
 
 .radio-button {
