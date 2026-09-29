@@ -18,14 +18,37 @@
     background-size: 60% 60%;
 }
 
-.hero-section > img {
+.circle {
     width: 160px;
 
-    position: absolute;
+    position: relative;
     top: 30%;
     left: 15%;
+}
+
+.circle-green {
+    box-shadow: -2px 4px 10.8px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+
+.circle-text {
+    width: 132px;
+    margin: 15px;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
 
     animation: circle-rotate 8s linear infinite;
+}
+
+.circle-flag {
+    width: 50px;
+    margin: 55px;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 .hero-text {
@@ -64,7 +87,7 @@
         background-size: 50% 80%;
     }
 
-    .hero-section > img {
+    .circle {
         left: 25%;
         top: 40%;
     }
@@ -80,7 +103,7 @@
         height: calc(100dvh - 104px);
     }
 
-    .hero-section > img {
+    .circle {
         top: 50%;
         left: 30%;
     }
@@ -106,8 +129,8 @@
         background-size: 50%;
     }
 
-    .hero-section > img {
-        top: 65%;
+    .circle {
+        top: 40%;
         left: 35%;
     }
 }
@@ -128,7 +151,7 @@
         top: 115px;
     }
 
-    .hero-section > img {
+    .circle {
         top: 370px;
     }
 }
