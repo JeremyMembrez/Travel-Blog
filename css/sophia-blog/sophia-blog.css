@@ -1,3 +1,9 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
 h1,
 h2,
 h3,
@@ -14,6 +20,7 @@ main {
     align-items: center;
     gap: 40px;
     padding: 24px 16px;
+    flex: 1;
 }
 
 h2 {
@@ -469,6 +476,7 @@ p {
     input[type="radio"] {
         margin: 20px 8px 8px;
         z-index: 2;
+        cursor: pointer;
 
         appearance: none;
         background-color: var(--greentransparent);
