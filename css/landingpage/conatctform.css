@@ -52,6 +52,8 @@
     border-width: 1px;
     border-style: solid;
     align-self: center;
+
+    cursor: pointer;
 }
 
 .contactform-form > button > p{
@@ -60,6 +62,7 @@
     font-weight: 700;
     color: var(--grey);
     letter-spacing: 5%;
+    padding: 0;
 }
 
 .contactform-form > button:hover{
