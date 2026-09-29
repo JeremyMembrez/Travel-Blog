@@ -262,13 +262,12 @@ text-align: start;
     letter-spacing: 5%;
 }
 .shareslider > img{
-    visibility: hidden;
+    display: none;
     width: 25px;
     transition: all 250ms ease-in;
 }
 .sharelinks{
-    visibility: hidden;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 10px;
 
@@ -293,11 +292,11 @@ text-align: start;
     transform: translateX(-20%);
 }
 #sharebutton:checked ~ .shareslider > img{
-    visibility: visible;
+    display: flex;
     transform: translateX(-50%);
 }
 #sharebutton:checked ~ .shareslider > .sharelinks{
-    visibility: visible;
+    display: flex;
 }
 
 
@@ -432,4 +431,9 @@ text-align: start;
         transform: rotateY(30deg) scale(0.9) translateX(-5%);
         z-index: 1;
     }
+}
+
+@media screen and (max-width: 400px){
+    .intro-text h1{
+        font-size: clamp(20px, 10vw, 40px);
 }
